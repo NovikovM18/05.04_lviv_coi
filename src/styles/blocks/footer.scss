@@ -1,0 +1,13 @@
+.footer {
+  background-color: #150433;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+
+  &__menu {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,97 @@
+.help {
+  &__bg {
+    width: 320px;
+    height: 869px;
+    background-color: #F61067;
+    position: absolute;
+    z-index: -1;
+
+    @include onMob {
+      display: none;
+    }
+  }
+  &__content {
+    z-index: 0;
+    margin-top: 54px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 78px;
+
+        
+    @include onMob {
+      max-width: 80%;
+    }
+    
+    &-image {
+      width: 600px;
+      height: 866px;
+
+      @include onMob {
+        display: none;
+      }
+    }
+
+    &-form {
+      min-width: 320px;
+    }
+  }
+
+  &__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    color: #424242;
+
+    &-big {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 78px;
+
+      &__pink {
+        color: #F61067;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__input {
+      height: 50px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #484848;
+      
+      &-ta {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #484848;
+      }
+    }
+
+    &__check {
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__button {
+      width: 250px;
+      height: 65px;
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      color: #fff;
+      background-color: #F61067;
+    }
+  }
+}

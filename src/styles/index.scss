@@ -1,0 +1,27 @@
+@import './utils/mixins.scss';
+
+@import './blocks/header.scss';
+@import './blocks/footer.scss';
+@import './blocks/contacts.scss';
+@import './blocks/menu.scss';
+@import './blocks/solutions.scss';
+@import './blocks/grid.scss';
+@import './blocks/who-us.scss';
+@import './blocks/help.scss';
+
+
+.page {
+  &__section {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 320px;
+  
+  padding: 20px;
+}

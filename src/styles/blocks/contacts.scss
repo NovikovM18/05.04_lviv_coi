@@ -1,0 +1,62 @@
+.contacts {
+  background-color: #150433;
+  color: #fff;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__text{
+    
+    @include onMob {
+      margin: 0 auto;
+    }
+    
+    &__title {
+      font-size: 50px;
+      line-height: 78px;
+      font-weight: 700;
+    }
+    &__list {
+      list-style: none;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    width: 296px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+
+    &:hover {
+      border: 1px solid #F61067;
+    }
+
+    &:active {
+      background-color: #F61067;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__map {
+    width: 708px;
+    height: 600px;
+    background-color: #fff;
+
+    @include onMob {
+      display: none;
+    }
+  }
+}
