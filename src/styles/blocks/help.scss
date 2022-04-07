@@ -54,6 +54,12 @@
 
       &__pink {
         color: #F61067;
+        }
+
+        @include onMob {
+          font-size: 40px;
+          line-height: 45px;
+          margin-bottom: 20px;
       }
     }
   }
@@ -138,8 +144,9 @@
 
 .alert {
   position: absolute;
+  padding: 20px;
   top: 30%;
-  left: 30%;
+  left: 25%;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -147,13 +154,13 @@
   background-color: #fff;
   width: 700px;
   height: 314px;
+  border: 1px solid #424242;
+  border-radius: 8px;
 
   &__button {
     width: 54px;
     height: 54px;
     background-image: url(./img/done.png);
-    border-color: #fff;
-    background-color: #fff;
     border-radius: 50%;
   }
 
@@ -162,6 +169,11 @@
     font-weight: 700;
     font-style: 30px;
     line-height: 50px;
+
+    @include onMob {
+      font-style: 20px;
+      line-height: 25px;
+    }
   }
 
   &__text {
@@ -170,5 +182,16 @@
     font-weight: 400;
     font-style: 16px;
     line-height: 36px;
+
+    @include onMob {
+      font-style: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @include onMob {
+    left: 15%;
+    width: 70%;
+    height: 214px;
   }
 }
