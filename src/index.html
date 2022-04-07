@@ -245,9 +245,9 @@
               <h2 class="help__title">Допомога</h2>
               <h2 class="help__title-big">Запитуйте у <span class="help__title-big__pink">професіоналів</span></h2>
               <form class="help__form" action="#" id="contactForm">
-                <input class="help__form__input" type="text" name="name" placeholder="Ім'я">
-                <input class="help__form__input _req" type="email" name="email" placeholder="Email">
-                <input class="help__form__input _req" type="text" name="tel" id="tel" placeholder="Телефон">
+                <input class="help__form__input" type="text" name="name" id="name" placeholder="Ім'я" value="" required>
+                <input class="help__form__input _req" type="email" name="email" id="email" placeholder="Email" required>
+                <input class="help__form__input _req" type="text" name="phone" id="phone" placeholder="Телефон" required>
                 <select
                   form="contactForm"
                   id="select"
@@ -255,6 +255,7 @@
                   type="select"
                   name="sel"
                   placeholder="Оберіть пункт"
+                  required
                 >
                   <option class="help__form__input-so" value="Пункт-1">Пункт-1</option>
                   <option class="help__form__input-so" value="Пункт-2">Пункт-2</option>
@@ -292,10 +293,15 @@
                   </span>
                 </div>
 
-                <textarea class="help__form__input-ta" name="message" placeholder="Text your message" cols="50" rows="10"></textarea>
+                <textarea class="help__form__input-ta" name="message" placeholder="Text your message" cols="50" rows="10" required></textarea>
                 <button type="submit" class="help__form__button">Відправити дані</button>
               </form>
             </div>
+          </div>
+          <div class="alert" id="alert">
+            <input class="alert__button" type="button" id="alert__button"></input>
+            <h3 class="alert__title">Ваше повідомлення відправлено успшно!</h3>
+            <p class="alert__text">Дякуємо! Ваше повідомлення відправлено успішно. Очікуйте на відповідь!</p>
           </div>
         </div>
       </section>
@@ -620,5 +626,7 @@ if(that.options.dots) {  // инициализация индикаторных 
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGirxJf-jctJvDpwMpjv-sHj8eVjVwD2k&callback=initMap&v=weekly"
       async
     ></script>
+
+    <script src="./form.js"></script>
   </body>
 </html>
