@@ -16,8 +16,9 @@
     margin-left: 50px;
     display: flex;
     flex-direction: row;
-    gap: 78px;
-
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
         
     @include onMob {
       max-width: 80%;
@@ -33,7 +34,7 @@
     }
 
     &-form {
-      min-width: 320px;
+      min-width: 280px;
     }
   }
 
@@ -62,6 +63,7 @@
 
     &__input {
       height: 50px;
+      min-width: 200px;
       font-family: 'Lato', sans-serif;
       font-weight: 400;
       font-size: 16px;
@@ -69,11 +71,25 @@
       color: #484848;
       
       &-ta {
+        min-width: 200px;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
         color: #484848;
+      }
+
+      &-so {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #484848;
+
+        &:hover {
+          color: #fff;
+          background-color: #150433;
+        }
       }
     }
 
@@ -92,6 +108,7 @@
       line-height: 25px;
       color: #fff;
       background-color: #F61067;
+      border-radius: 8px;
     }
   }
 }

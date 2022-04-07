@@ -1,3 +1,5 @@
+const gulp = require('gulp');
+const ghPages = require('gulp-gh-pages');
 const {src, dest, series, watch} = require('gulp')
 const sass = require('gulp-sass')
 const csso = require('gulp-csso')
@@ -53,3 +55,8 @@ function serve() {
 exports.build = series(clear, scss, html, img, js)
 exports.serve = series(clear, scss, html, img, js, serve)
 exports.clear = clear
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
