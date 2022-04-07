@@ -244,10 +244,10 @@
             <div class="help__content-form">
               <h2 class="help__title">Допомога</h2>
               <h2 class="help__title-big">Запитуйте у <span class="help__title-big__pink">професіоналів</span></h2>
-              <form class="help__form" action="#" method="GET" id="contactForm">
+              <form class="help__form" action="#" id="contactForm">
                 <input class="help__form__input" type="text" name="name" placeholder="Ім'я">
-                <input class="help__form__input" type="text" name="email" placeholder="Email">
-                <input class="help__form__input" type="text" name="tel" placeholder="Телефон">
+                <input class="help__form__input _req" type="email" name="email" placeholder="Email">
+                <input class="help__form__input _req" type="text" name="tel" id="tel" placeholder="Телефон">
                 <select
                   form="contactForm"
                   id="select"
@@ -255,13 +255,11 @@
                   type="select"
                   name="sel"
                   placeholder="Оберіть пункт"
-                 
                 >
                   <option class="help__form__input-so" value="Пункт-1">Пункт-1</option>
                   <option class="help__form__input-so" value="Пункт-2">Пункт-2</option>
                   <option class="help__form__input-so" value="Пункт-3">Пункт-3</option>
                   <option class="help__form__input-so" value="Пункт-4">Пункт-4</option>
-                  
                 </select>
                 
                 <div class="help__form__check">
@@ -284,12 +282,10 @@
                     <input type="radio" id="radio-1" name="radio" value="radio-1">
                     <label for="radio-1">radio-1</label>
                   </span>
-                  
                   <span>
                     <input type="radio" id="radio-2" name="radio" value="radio-2">
                     <label for="radio-2">radio-2</label>
                   </span>
-                 
                   <span>
                     <input type="radio" id="radio-3" name="radio" value="radio-3">
                     <label for="radio-3">radio-3</label>
@@ -297,7 +293,7 @@
                 </div>
 
                 <textarea class="help__form__input-ta" name="message" placeholder="Text your message" cols="50" rows="10"></textarea>
-                <button class="help__form__button">Відправити дані</button>
+                <button type="submit" class="help__form__button">Відправити дані</button>
               </form>
             </div>
           </div>
@@ -384,6 +380,8 @@
       </div>
     </footer>
     
+
+
     <script>
       function Ant(crslId) {
 
@@ -617,7 +615,8 @@ if(that.options.dots) {  // инициализация индикаторных 
 };
     </script>
     <script>new Ant()</script>
-
+    
+    <script src="https://unpkg.com/imask"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGirxJf-jctJvDpwMpjv-sHj8eVjVwD2k&callback=initMap&v=weekly"
       async

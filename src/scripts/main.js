@@ -1,19 +1,30 @@
 'use strict';
+import IMask from 'imask';
 
 document.getElementById('contactForm')
   .addEventListener('submit', function(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    document.getElementsByName('name')[0].value = '';
-    document.getElementsByName('email')[0].value = '';
-    document.getElementsByName('tel')[0].value = '';
-    document.getElementsByName('sel')[0].value = '';
-    document.getElementsByName('message')[0].value = '';
-    document.getElementsByName('check-1')[0].value = '';
-    document.getElementsByName('check-2')[0].value = '';
-    document.getElementsByName('check-3')[0].value = '';
-    document.getElementsByName('radio')[0].value = '';
-  });
+  const element = document.getElementById('tel');
+    const maskOptions = {
+      mask: '+{38 0}(00)-00-00'
+    };
+    const mask = IMask(element, maskOptions);
+
+document.getElementsByName('name')[0].value = '';
+document.getElementsByName('email')[0].value = '';
+document.getElementsByName('tel')[0].value = '';
+document.getElementsByName('sel')[0].value = '';
+document.getElementsByName('message')[0].value = '';
+document.getElementsByName('check-1')[0].value = '';
+document.getElementsByName('check-2')[0].value = '';
+document.getElementsByName('check-3')[0].value = '';
+document.getElementsByName('radio')[0].value = '';
+
+alert('Thank YOU!')
+
+
+});
 
 function initMap() {
   const uluru_1 = { lat: 49.8527787, lng: 23.9421962 };

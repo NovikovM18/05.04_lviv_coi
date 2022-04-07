@@ -69,6 +69,10 @@
       font-size: 16px;
       line-height: 20px;
       color: #484848;
+
+      &:focus {
+        box-shadow: 0 0 12px #F61067;
+      }
       
       &-ta {
         min-width: 200px;
@@ -77,6 +81,11 @@
         font-size: 16px;
         line-height: 20px;
         color: #484848;
+        resize: vertical;
+
+        &:focus {
+          box-shadow: 0 0 12px #F61067;
+        }
       }
 
       &-so {
@@ -109,6 +118,14 @@
       color: #fff;
       background-color: #F61067;
       border-radius: 8px;
+
+      &:hover {
+        box-shadow: 0 0 12px #F61067;
+      }
     }
   }
+}
+
+.help__form * {
+  outline: none;
 }
