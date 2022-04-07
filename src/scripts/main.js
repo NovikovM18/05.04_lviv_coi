@@ -1,5 +1,4 @@
-'use strict';
-import IMask from 'imask';
+'use strict'
 
 document.getElementById('contactForm')
   .addEventListener('submit', function(event) {
