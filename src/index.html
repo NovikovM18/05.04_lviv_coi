@@ -245,9 +245,18 @@
               <h2 class="help__title">Допомога</h2>
               <h2 class="help__title-big">Запитуйте у <span class="help__title-big__pink">професіоналів</span></h2>
               <form class="help__form" action="#" id="contactForm">
-                <input class="help__form__input" type="text" name="name" id="name" placeholder="Ім'я" value="" required>
-                <input class="help__form__input _req" type="email" name="email" id="email" placeholder="Email" required>
-                <input class="help__form__input _req" type="text" name="phone" id="phone" placeholder="Телефон" required>
+                <fieldset class="help__form__set">  <legend>Ім'я</legend>
+                  <input class="help__form__input" type="text" name="name" id="name" value="" required>
+                </fieldset>
+
+                <fieldset class="help__form__set">  <legend>Телефон</legend>
+                  <input class="help__form__input _req" type="text" name="phone" id="phone" required>
+                </fieldset>
+
+                <fieldset class="help__form__set">  <legend>Email</legend>
+                  <input class="help__form__input _req" type="email" name="email" id="email" required>
+                </fieldset>
+
                 <select
                   form="contactForm"
                   id="select"
@@ -293,7 +302,7 @@
                   </span>
                 </div>
 
-                <textarea class="help__form__input-ta" name="message" placeholder="Text your message" cols="50" rows="10" required></textarea>
+                <textarea class="help__form__input-ta" name="message" placeholder="Коментар" cols="50" rows="10" required></textarea>
                 <button type="submit" class="help__form__button">Відправити дані</button>
               </form>
             </div>
