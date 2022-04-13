@@ -13,8 +13,9 @@
     line-height: 78.5px;
     
     @include onMob {
+      margin-top: 40px;
       font-size: 45px;
-      line-height: 45px;
+      line-height: 60px;
     }
   }
 
@@ -34,6 +35,9 @@
 
     &__text {
       width: 505px;
+      @include onMob {
+        text-align: center;
+      }
     }
   
     &__image {

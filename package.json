@@ -20,10 +20,10 @@
     "gulp-file-include": "^2.0.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "gulp-imagemin": "^8.0.0",
     "imask": "^6.4.2",
     "node-sass": "^7.0.1",
     "node-scss": "^7.0.3"

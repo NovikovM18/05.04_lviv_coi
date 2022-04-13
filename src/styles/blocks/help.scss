@@ -78,6 +78,18 @@
       line-height: 20px;
       color: #484848;
       border: 0 none;
+
+      &-select {
+        height: 44px;
+        min-width: calc(100% - 4px);
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #484848;
+        border: 1px solid #484848;
+        border-radius: 8px;
+      }
       
       &-ta {
         padding-left: 4px;
@@ -138,9 +150,13 @@
       min-width: 200px;
       font-family: 'Lato', sans-serif;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 12px;
+      line-height: 16px;
       color: #484848;
+
+      &-legend {
+        padding: 0 10px;
+      }
     }
   }
 }

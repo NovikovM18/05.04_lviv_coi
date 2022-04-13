@@ -17,10 +17,10 @@ document.getElementsByName('radio')[0].value = '';
 function validateForm()  {
   const name = document.getElementById("name").value;
 
-  // if (name.length === 3) {
-  //     alert("Введіть мінімум 3 символи");
-  //     return false;
-  // }
+  if (name.length === 3) {
+      alert("Введіть мінімум 3 символи");
+      return false;
+  }
 
 
   return true;

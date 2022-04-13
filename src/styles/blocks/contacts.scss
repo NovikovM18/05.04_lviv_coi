@@ -48,12 +48,19 @@
     line-height: 25px;
     font-weight: 700;
     color: #fff;
+
+    &-contacts {
+      @include onDesktop {
+        display: none;
+      }
+    }
   }
 
   &__map {
     width: 708px;
     height: 600px;
     background-color: #fff;
+    color:#150433;
 
     @include onMob {
       display: none;

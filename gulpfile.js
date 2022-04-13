@@ -1,13 +1,14 @@
 const gulp = require('gulp');
 const ghPages = require('gulp-gh-pages');
-const {src, dest, series, watch} = require('gulp')
-const sass = require('gulp-sass')
-const csso = require('gulp-csso')
-const htmlmin = require('gulp-htmlmin')
-const del = require('del')
-const concat = require('gulp-concat')
-const autoprefixer = require('gulp-autoprefixer')
-const sync = require('browser-sync').create()
+const {src, dest, series, watch} = require('gulp');
+const sass = require('gulp-sass');
+const csso = require('gulp-csso');
+const htmlmin = require('gulp-htmlmin');
+const imagemin = require('gulp-imagemin');
+const del = require('del');
+const concat = require('gulp-concat');
+const autoprefixer = require('gulp-autoprefixer');
+const sync = require('browser-sync').create();
 
 function html() {
   return src('src/**.html')
@@ -19,6 +20,7 @@ function html() {
 
 function img () {
   return src('scr/img/*')
+    .pipe(imagemin)
     .pipe(dest('dist/img'))
 }
 

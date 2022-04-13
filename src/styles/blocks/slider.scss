@@ -17,9 +17,7 @@
 }
 
 .ant-carousel {
-  height: 630px;
-  margin: 50px auto auto;
-  padding-top: 10px;
+  margin: 0 auto;
 }
 
 .ant-carousel-element {
@@ -99,19 +97,21 @@ div.ant-carousel-arrow-right {
 div.ant-carousel-arrow-left {
   left: -40px;
   top: 40%;
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   display: block;
   background-image: url(./img/arrow.png);
+  background-repeat: no-repeat;  
 }
 
 div.ant-carousel-arrow-right {
   right: -40px;
   top: 40%;
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   display: block;
   background-image: url(./img/arrow_r.png);
+  background-repeat: no-repeat;  
 }
 
 div.ant-carousel-arrow-left:hover {
@@ -133,12 +133,12 @@ div.ant-carousel-dots {
 }
 
 span.ant-dot {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   margin: 5px 7px;
   padding: 0;
   display: inline-block;
-  background-color: #BBB;
-  border-radius: 5px;
+  background-color: #F61067;;
+  border-radius: 50%;
   cursor: pointer;
 }

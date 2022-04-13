@@ -8,8 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noticia+Text:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./index.css">
     <script src="./main.js"></script>
   </head>
   <body class="page" id="home">
@@ -90,20 +89,24 @@
               <h1 class="ant-carousel-element-title">Ми робимо <br>
                 <span class="ant-carousel-element-red">класний бізнес#1</span></h1>
               <p class="ant-carousel-element-text">Ми допоможемо вам зробити ваш бізнес <br> успішним та прибутковим. Допомагаємо <br> всім, хто цього хоче!</p>
-              <button class="ant-carousel-element-button">Безкоштовна консультація </button>
-            </li>
+              <a href="#help">
+                <button class="ant-carousel-element-button">Безкоштовна консультація </button>
+              </a>
             <li class="ant-carousel-element">
               <h1 class="ant-carousel-element-title">Ми робимо <br>
                 <span class="ant-carousel-element-red">класний бізнес#2</span></h1>
               <p class="ant-carousel-element-text">Ми допоможемо вам зробити ваш бізнес <br> успішним та прибутковим. Допомагаємо <br> всім, хто цього хоче!</p>
-              <button class="ant-carousel-element-button">Безкоштовна консультація </button>
-            </li>
+              <a href="#help">
+                <button class="ant-carousel-element-button">Безкоштовна консультація </button>
+              </a>
+              </li>
             <li class="ant-carousel-element">
               <h1 class="ant-carousel-element-title">Ми робимо <br>
                 <span class="ant-carousel-element-red">класний бізнес#3</span></h1>
               <p class="ant-carousel-element-text">Ми допоможемо вам зробити ваш бізнес <br> успішним та прибутковим. Допомагаємо <br> всім, хто цього хоче!</p>
-              <button class="ant-carousel-element-button">Безкоштовна консультація </button>
-            </li>
+              <a href="#help">
+                <button class="ant-carousel-element-button">Безкоштовна консультація </button>
+              </a>
           </ul>
         </div>
         <div class="ant-carousel-arrow-left"></div>
@@ -220,7 +223,7 @@
         <div class="container">
           <div class="who-us__content">
             <div class="who-us__content__text">
-              <h2 class="who-us__title">Ми професіонали у ведденні бізнесу</h2>
+              <h2 class="who-us__title">Ми професіонали у веденні бізнесу</h2>
               <p class="who-us__text">
                 Ми настільки круті, що у нас стільки грошей, що нам немає сенсу вас обманювати.
               </br>
@@ -245,22 +248,22 @@
               <h2 class="help__title">Допомога</h2>
               <h2 class="help__title-big">Запитуйте у <span class="help__title-big__pink">професіоналів</span></h2>
               <form class="help__form" action="#" id="contactForm">
-                <fieldset class="help__form__set">  <legend>Ім'я</legend>
+                <fieldset class="help__form__set">  <legend class="help__form__set-legend">Ім'я</legend>
                   <input class="help__form__input" type="text" name="name" id="name" value="" required>
                 </fieldset>
 
-                <fieldset class="help__form__set">  <legend>Телефон</legend>
+                <fieldset class="help__form__set">  <legend class="help__form__set-legend">Телефон</legend>
                   <input class="help__form__input _req" type="text" name="phone" id="phone" required>
                 </fieldset>
 
-                <fieldset class="help__form__set">  <legend>Email</legend>
+                <fieldset class="help__form__set">  <legend class="help__form__set-legend">Email</legend>
                   <input class="help__form__input _req" type="email" name="email" id="email" required>
                 </fieldset>
 
                 <select
                   form="contactForm"
                   id="select"
-                  class="help__form__input"
+                  class="help__form__input-select"
                   type="select"
                   name="sel"
                   placeholder="Оберіть пункт"
@@ -324,22 +327,30 @@
                 <li class="contacts__item">
                   <img src="./img/point.png" alt="">
                   <a class="contacts__link" href="#contacts">Україна, м. Львів, </br>
-                    вул. Степана Гіги 45/2</a>
+                    вул. Степана Гіги 45/2
+                    <p class="contacts__link-contacts">Контакти:</p>
+                  </a>
                 </li>
                 <li class="contacts__item">
                   <img src="./img/point.png" alt="">
                   <a class="contacts__link" href="#contacts">Україна, м. Львів, </br>
-                    вул. Павла Зіборва 45/2</a>
+                    вул. Павла Зіборва 45/2
+                    <p class="contacts__link-contacts">Контакти:</p>
+                  </a>
                 </li>
                 <li class="contacts__item">
                   <img src="./img/point.png" alt="">
                   <a class="contacts__link" href="#contacts">Україна, м. Львів, </br>
-                    вул. Віктора Павліка  45/2</a>
+                    вул. Віктора Павліка  45/2
+                    <p class="contacts__link-contacts">Контакти:</p>
+                  </a>
                 </li>
                 <li class="contacts__item">
                   <img src="./img/point.png" alt="">
                   <a class="contacts__link" href="#contacts">Україна, м. Львів, </br>
-                    вул. Іво Бобула 45/2</a>
+                    вул. Іво Бобула 45/2
+                    <p class="contacts__link-contacts">Контакти:</p>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -398,40 +409,37 @@
 
 
     <script>
-      function Ant(crslId) {
+function Ant(crslId) {
+  let id = document.getElementById(crslId);
+  if(id) {
+    this.crslRoot = id
+  }
+  else {
+    this.crslRoot = document.querySelector('.ant-carousel')
+  };
 
-let id = document.getElementById(crslId);
-if(id) {
-  this.crslRoot = id
-}
-else {
-  this.crslRoot = document.querySelector('.ant-carousel')
-};
+  // Carousel objects
+  this.crslList = this.crslRoot.querySelector('.ant-carousel-list');
+  this.crslElements = this.crslList.querySelectorAll('.ant-carousel-element');
+  this.crslElemFirst = this.crslList.querySelector('.ant-carousel-element');
+  this.leftArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-left');
+  this.rightArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-right');
+  this.indicatorDots = this.crslRoot.querySelector('div.ant-carousel-dots');
 
-// Carousel objects
-this.crslList = this.crslRoot.querySelector('.ant-carousel-list');
-this.crslElements = this.crslList.querySelectorAll('.ant-carousel-element');
-this.crslElemFirst = this.crslList.querySelector('.ant-carousel-element');
-this.leftArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-left');
-this.rightArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-right');
-this.indicatorDots = this.crslRoot.querySelector('div.ant-carousel-dots');
-
-// Initialization
-this.options = Ant.defaults;
-Ant.initialize(this)
+  // Initialization
+  this.options = Ant.defaults;
+  Ant.initialize(this)
 };
 
 Ant.defaults = {
-
-// Default options for the carousel
-elemVisible: 1, // Кол-во отображаемых элементов в карусели
-loop: true,     // Бесконечное зацикливание карусели 
-auto: true,     // Автоматическая прокрутка
-interval: 5000, // Интервал между прокруткой элементов (мс)
-speed: 550,     // Скорость анимации (мс)
-touch: true,    // Прокрутка  прикосновением
-arrows: true,   // Прокрутка стрелками
-dots: true      // Индикаторные точки
+  elemVisible: 1,
+  loop: true,
+  auto: true,
+  interval: 5000,
+  speed: 550,
+  touch: true,
+  arrows: true,
+  dots: true
 };
 
 Ant.prototype.elemPrev = function(num) {
@@ -442,7 +450,7 @@ this.currentElement -= num;
 if(this.currentElement < 0) this.currentElement = this.dotsVisible-1;
 if(this.options.dots) this.dotOff(this.currentElement);
 
-if(!this.options.loop) {  // сдвиг вправо без цикла
+if(!this.options.loop) {
   this.currentOffset += this.elemWidth*num;
   this.crslList.style.marginLeft = this.currentOffset + 'px';
   if(this.currentElement == 0) {
@@ -450,7 +458,7 @@ if(!this.options.loop) {  // сдвиг вправо без цикла
   }
   this.rightArrow.style.display = 'block'; this.touchNext = true
 }
-else {                    // сдвиг вправо с циклом
+else {
   let elm, buf, this$ = this;
   for(let i=0; i<num; i++) {
     elm = this.crslList.lastElementChild;
@@ -476,7 +484,7 @@ this.currentElement += num;
 if(this.currentElement >= this.dotsVisible) this.currentElement = 0;
 if(this.options.dots) this.dotOff(this.currentElement);
 
-if(!this.options.loop) {  // сдвиг влево без цикла
+if(!this.options.loop) {
   this.currentOffset -= this.elemWidth*num;
   this.crslList.style.marginLeft = this.currentOffset + 'px';
   if(this.currentElement == this.dotsVisible-1) {
@@ -484,7 +492,7 @@ if(!this.options.loop) {  // сдвиг влево без цикла
   }
   this.leftArrow.style.display = 'block'; this.touchPrev = true
 }
-else {                    // сдвиг влево с циклом
+else {
   let elm, buf, this$ = this;
   this.crslList.style.cssText = 'transition:margin '+this.options.speed+'ms ease;';
   this.crslList.style.marginLeft = '-' + this.elemWidth*num + 'px';
@@ -511,10 +519,10 @@ this.indicatorDotsAll[num].style.cssText = 'background-color:#556; cursor:defaul
 Ant.initialize = function(that) {
 
 // Constants
-that.elemCount = that.crslElements.length; // Количество элементов
-that.dotsVisible = that.elemCount;         // Число видимых точек
+that.elemCount = that.crslElements.length;
+that.dotsVisible = that.elemCount;
 let elemStyle = window.getComputedStyle(that.crslElemFirst);
-that.elemWidth = that.crslElemFirst.offsetWidth +  // Ширина элемента (без margin)
+that.elemWidth = that.crslElemFirst.offsetWidth +
   parseInt(elemStyle.marginLeft) + parseInt(elemStyle.marginRight);
 
 // Variables
@@ -536,29 +544,27 @@ function setAutoScroll() {
   }, that.options.interval)
 };
 
-// Start initialization
-if(that.elemCount <= that.options.elemVisible) {   // Отключить навигацию
+if(that.elemCount <= that.options.elemVisible) {
   that.options.auto = false; that.options.touch = false;
   that.options.arrows = false; that.options.dots = false;
   that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
 };
 
-if(!that.options.loop) {       // если нет цикла - уточнить количество точек
+if(!that.options.loop) {
   that.dotsVisible = that.elemCount - that.options.elemVisible + 1;
-  that.leftArrow.style.display = 'none';  // отключить левую стрелку
-  that.touchPrev = false;    // отключить прокрутку прикосновением вправо
-  that.options.auto = false; // отключить автопркрутку
+  that.leftArrow.style.display = 'none';
+  that.touchPrev = false;
+  that.options.auto = false;
 }
-else if(that.options.auto) {   // инициализация автопрокруки
+else if(that.options.auto) {
   setAutoScroll();
-  // Остановка прокрутки при наведении мыши на элемент
   that.crslList.addEventListener('mouseenter', function() {
     clearInterval(that.autoScroll)
   }, false);
   that.crslList.addEventListener('mouseleave', setAutoScroll, false)
 };
 
-if(that.options.touch) {   // инициализация прокрутки прикосновением
+if(that.options.touch) {
   that.crslList.addEventListener('touchstart', function(e) {
     xTouch = parseInt(e.touches[0].clientX);
     yTouch = parseInt(e.touches[0].clientY);
@@ -581,7 +587,7 @@ if(that.options.touch) {   // инициализация прокрутки пр
   }, false)
 };
 
-if(that.options.arrows) {  // инициализация стрелок
+if(that.options.arrows) {
   if(!that.options.loop) that.crslList.style.cssText =
     'transition:margin '+that.options.speed+'ms ease;';
   that.leftArrow.addEventListener('click', function() {
@@ -602,14 +608,13 @@ else {
   that.rightArrow.style.display = 'none'
 };
 
-if(that.options.dots) {  // инициализация индикаторных точек
+if(that.options.dots) {
   let sum = '', diffNum;
   for(let i=0; i<that.dotsVisible; i++) {
     sum += '<span class="ant-dot"></span>'
   };
   that.indicatorDots.innerHTML = sum;
   that.indicatorDotsAll = that.crslRoot.querySelectorAll('span.ant-dot');
-  // Назначаем точкам обработчик события 'click'
   for(let n=0; n<that.dotsVisible; n++) {
     that.indicatorDotsAll[n].addEventListener('click', function() {
       diffNum = Math.abs(n - that.currentElement);
@@ -619,10 +624,9 @@ if(that.options.dots) {  // инициализация индикаторных 
       else if(n > that.currentElement) {
         bgTime = getTime(); that.elemNext(diffNum)
       }
-      // Если n == that.currentElement ничего не делаем
     }, false)
   };
-  that.dotOff(0);  // точка[0] выключена, остальные включены
+  that.dotOff(0);
   for(let i=1; i<that.dotsVisible; i++) {
     that.dotOn(i)
   }
