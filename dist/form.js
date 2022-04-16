@@ -1,4 +1,9 @@
 'use strict'
+const burger = document.querySelector('.burger');
+const mm = document.querySelector('.menu__list--mob');
+burger.addEventListener('click', () => {
+  mm.classList.toggle('active_mm')
+});
 
 document.getElementById('contactForm')
 .addEventListener('submit', function(event) {

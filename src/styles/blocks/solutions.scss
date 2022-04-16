@@ -4,6 +4,10 @@
     height: 196px;
     max-width: 1098px;
 
+    @include onMob {
+    height: 126px;
+    }
+
     &-1 {
       font-family: 'Lato', sans-serif;
       font-weight: 600;

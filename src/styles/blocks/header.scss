@@ -4,9 +4,17 @@
 }
 
 .header {
+
+  width: 100%;
   margin: 0;
   padding: 0;
   height: 100vh;
   background-image: url(./img/header.png);
   background-position: center;
+
+  @include onMob {
+    height: 0px;
+    position: fixed;
+    z-index: 5;
+    }
 }
